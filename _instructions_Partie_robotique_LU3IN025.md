@@ -6,9 +6,9 @@ UE LU3IN025 IA et Jeux, partie Robotique Autonome
 
 Consultez les trois fichiers qui décrive les sujets des 2 TPs et le sujet de projet:
 
-* [instructions_TP1.md](instructions_TP1.md): TP sur la conception de comportement. Braitenberg et architecture de subsomption. 
-* [instructions_TP2.md](instructions_TP2.md): TP sur l'optimisation de comportement pour un robot autonome (recherche aléatoire, puis algorithmes génétiques).
-* [instructions_projet.md](instructions_projet.md): description du projet.
+* [_instructions_TP1.md](_instructions_TP1.md): TP sur la conception de comportement. Braitenberg et architecture de subsomption. 
+* [_instructions_TP2.md](_instructions_TP2.md): TP sur l'optimisation de comportement pour un robot autonome (recherche aléatoire, puis algorithmes génétiques).
+* [_instructions_projet.md](_instructions_projet.md): description du projet.
 
 # Remarques spécifique à l'utilisation à la PPTI
 
