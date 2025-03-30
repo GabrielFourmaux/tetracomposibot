@@ -32,44 +32,38 @@ Fichiers importants, à modifier:
 Autres fichiers, à ne pas modifier.
 
 * _tetracomposibot.py_: le programme principal. _Ne pas modifier._
-* _robot_champion.py_: le comportement fourni à titre d'exemple, contre lequel il va falloir faire du mieux possible! _Ne pas modifier._
 * _arenas.py_: défini les arènes possibles. Vous pouvez éventuellement _ajouter_ des cartes pour faire des tests, si vous le souhaitez.
+* _robot_champion.py_: le comportement fourni à titre d'exemple, contre lequel il va falloir faire du mieux possible! _Ne pas modifier._
 
 Vous pouvez aussi utiliser le script _go_tournament_ qui permet de lancer 10 matches (2 matches par arène, en changeant la position de départ -- l'équipe rouge démarrera à gauche, puis à droite). Dans ce script, vous pouvez modifier la variable display_mode pour changer le mode d'affichage. Suggestion: 1 pour vitesse rapide avec une visualisation. 2 pour vitesse *très* rapide mais sans visualisation.
 
-_paintwars.py_ utilise par défaut les paramètres spécifiés dans _paintwars_config.py_ (numéro de l'arène, position de départ, vitesse de rendu). Cependant, il est possible de lancer _paintwars.py_ avec des paramètres en ligne de commande, comme suit:
+## Exécution
 
-_python paintwars.py <numero_arene> <inverser_position_de_depart> <vitesse_de_simulation>_
+_python tetracomposibot.py config_Paintwars_ utilise par défaut les paramètres spécifiés dans _config_Paintwars.py_ (numéro de l'arène, position de départ, vitesse de rendu). Cependant, il est possible de lancer le projet avec des paramètres en ligne de commande:
+
+_python tetracomposibot.py config_Paintwars <numero_arene> <inverser_position_de_depart> <vitesse_de_simulation>_
 
 * <numero_arene> : entre 0 et 4
 * <inverser_position_de_depart> : False ou True
 * <vitesse_de_simulation> : 0 (normal), 1 (rapide), 2 (très rapide, pas d'affichage)
-* Exemple: _python paintwars.py 3 True 1_
+* Exemple: _python tetracomposibot.py config_Paintwars 1 False 1_
 
 ## Evaluation
 
-Lors de la dernière séance de TP, vous présenterez votre travail pendant une soutenance de 15 minutes environ, en faisant tourner votre code.
-
-Nous vous fournirons au début de la séance deux nouveaux fichiers:
+Lors de la dernière séance de TP, vous présenterez votre travail pendant une soutenance de 15 minutes environ, en exécutant votre programme. Nous vous fournirons au début de la séance deux nouveaux fichiers:
 1. _go_tournament_eval_ qui permet de lancer un tournoi sur l'ensemble des arènes initialement fournies, ainsi que de nouvelles arènes
 2. _arenas_grX.py_ qui définit de nouvelles arènes inédites. le _X_ correspond à votre numéro de groupe.
-3. _robot_champion_eval.py_ qui décrit un robot avec une nouvelle stratégie 
 
 Pour utiliser ces nouvelles arènes, vous devez modifier le fichier _config_Paintwars.py_ en remplaçant l'importation de _arenas.py_ par le fichier fourni _arenas_eval_grX.py_
 
-On vous demandera de:
-* utiliser le script _go_tournament_eval_ pour présenter les scores de votre stratégie préférée contre l'équipe _robot_champion_eval_ pour chacun des labyrinthes initiaux ainsi que les labyrinthes inédits;
-* utiliser _tetracomposibot.py_ pour faire une démonstration des stratégies que vous avez implémentées;
-* expliquer votre architecture à l'oral, c'est à dire l'architecture globale et les comportements de base. Vous pouvez préparer une simple feuille A4 si vous souhaitez montrer visuellement votre architecture;
-* répondre aux questions qui pourront porter sur le code et sur les méthodes utilisées ou vues en cours.
+On vous demandera:
+* d'utiliser _tetracomposibot.py_ pour faire une démonstration des stratégies que vous avez implémentées;
+* d'utiliser le script _go_tournament_eval_ pour présenter les scores de votre stratégie préférée contre l'équipe _robot_champion_eval_ pour chacun des labyrinthes initiaux ainsi que les labyrinthes inédits;
+* d'expliquer votre architecture à l'oral, c'est à dire l'architecture globale et les comportements de base. Vous pouvez préparer une simple feuille A4 si vous souhaitez montrer visuellement votre architecture;
+* de répondre aux questions qui pourront porter sur le code et sur les méthodes utilisées ou vues en cours.
 
-Pendant la séance (hors soutenance), vous devrez vous coordonner avec les autres groupes de votre séance pour faire un tournoi. Chaque groupe devra rencontrer tous les autres groupes adversaires, sur toutes les arènes (2 matches par arène, en variant la position de départ). Pour cela, vous modifierez _config_Paintwars.py_ pour faire s'affronter les deux équipes (i.e. une équipe jouera les bleus, l'autre les rouges -- les imports et la fonction _initialize_robots_ devront être adaptés), et vous utiliserez le script _go_tournament_eval_  pour avoir rapidement des résultats.
+Pendant la séance (hors soutenance), vous devrez vous coordonner avec les autres groupes pour faire un tournoi. Chaque groupe devra rencontrer **tous** les autres groupes adversaires, sur toutes les arènes (2 matches par arène, en variant la position de départ). Pour cela, vous modifierez _config_Paintwars.py_ pour faire s'affronter les deux équipes (i.e. une équipe jouera les bleus, l'autre les rouges -- les imports et la fonction _initialize_robots_ devront être adaptés). Vous utiliserez le script _go_tournament_eval_  pour avoir rapidement des résultats (display_mode 1 ou 2).
 
 Vous reporterez les résultats du tournoi sur un document partagé qui vous sera donné en début de séance.
 
 Le dernier _git push_ de votre projet avant le début de la séance d'évaluation sera pris en compte comme rendu.
-
-## F.A.Q
-
-Q: la librairie Numba n'est pas installé ou ne fonctionne pas sur ma machine (problème pour utiliser njit)
-R: utilisez tetracomposibot_noOpt.py -- ce sera plus lent mais la seule dépendance nécessaire est pyGame
