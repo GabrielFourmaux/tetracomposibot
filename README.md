@@ -19,7 +19,7 @@ Demo: _python tetracomposibot.py_
 
 * Python 3.x
 * PyGame
-* Numba (si absent, utilisez _tetracomposibot_noOpt.py_
+* Numba (si absent, utilisez _tetracomposibot_noOpt.py_)
 
 # Exécution du simulateur
 
