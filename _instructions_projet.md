@@ -4,7 +4,7 @@
 
 Deux équipes de 4 robots (équipes rouge et bleue) s'affrontent pour visiter au mieux une arène découpée en cases. Une case appartient à l'équipe qui l'a visitée en dernier. Le temps est limité et l'équipe qui possède le plus de cases gagne. Il s'agit là d'une variation compétitive du _problème de la patrouille multi-agents_, un problème classique en robotique.
 
-Utilisez le fichier de configuration _config_paintwars.py_ pour avoir un aperçu du projet.
+Utilisez le fichier de configuration _config_Paintwars.py_ pour avoir un aperçu du projet.
 
 Pour commencer, n'hésitez pas à réutiliser les comportements déjà obtenus dans les TP1 et TP2. Dans votre architecture de comportement finale, il est demandé d'avoir _a minima_:
 * une architecture de subsomption ou une arbre de comportement
