@@ -41,7 +41,7 @@ Fichiers utilisateurs, modifiables:
 Pour créer un nouveau projet:
 1. créer un fichier configuration (cf. _config.py_ pour un exemple)
 2. créer un fichier robot (cf. _robot_wanderer.py_ pour un exemple)
-3. lancer la simulation en donnant le fichier configuration en paramètre (sans l'extension .py): _python tetracomposibot.py ma_config_
+3. lancer la simulation en donnant le fichier configuration en paramètre (avec ou sans l'extension .py): _python tetracomposibot.py ma_config_
 
 cf. _python tetracomposibot.py -h_ pour voir quels sont les paramètres que l'on peut passer en ligne de commande.
 
