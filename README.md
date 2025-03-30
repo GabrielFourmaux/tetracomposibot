@@ -85,3 +85,8 @@ Les variables suivantes sont pré-définies pour permettre une utilisation plus 
 
 Par exemple, _sensors[sensor_left]_ renvoie la distance normalisée (ie. entre 0.0 et 1.0) à l'obstacle s'il existe. _sensor_view[sensor_left_]_ renvoie le type d'obstacle (s'il existe).
 
+
+# F.A.Q
+
+Q: la librairie Numba n'est pas installée ou ne fonctionne pas sur ma machine (problème pour utiliser njit)
+R: utilisez tetracomposibot_noOpt.py -- plus lent, mais la seule dépendance nécessaire est pyGame
