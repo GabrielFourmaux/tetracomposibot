@@ -1,7 +1,16 @@
-# =-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 # =-= TETRACOMPOSIBOT =-=
-# =-= nb@su, 2025                =-=
-# =-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+# contact  : nicolas.bredeche at sorbonne-universite dot fr
+# initiated: 2025-03-25
+# revision : 2025-03-30
+
+* A simple simulator for playing with one... to many robots
+* Un simulateur très simple pour jouer avec un ou plusieurs robots
+
+_"With the Tetracomposibot it has now become possible to play and compose REAL simple robot demo"_
+
+Demo: _python tetracomposibot.py_
+
+![Tetracomposibot](tetracomposibot.png)
 
 # Pré-requis
 
