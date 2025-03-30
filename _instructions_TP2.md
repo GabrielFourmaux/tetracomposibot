@@ -57,7 +57,7 @@ Cela donnera par exemple:
 Vous devez maintenant générer des graphes de vos résultats:
 * tracer le résultat d'une recherche (axe X: evaluations, axe Y: score), en traçant pour chaque itération le meilleur individu trouvé jusqu'ici. (cf. premier exemple du fichier _aide.txt_)
 * tracer la performance moyenne d'une recherche aléatoire en compilant 10 essais indépendants. (cf. second exemple du fichier _aide.txt_)
-Pour cela, vous pouvez utiliser un tableur (p.ex. Libroffice) ou le script se trouvant dans le répertoire _multiplotCSV_ (consultez le fichier _aide.txt_).
+Pour cela, vous pouvez utiliser un tableur (p.ex. Libroffice) ou un script Python (ex.: [multiplot](https://github.com/nekonaute/SU-LU3IN025-robots/tree/main/multiplotCSV)).
 
 Remarques:
 * Plutôt que de sauvegarder directement les informations demandées dans un fichier, vous pouvez aussi simplement les afficher dans le terminal, et les copier manuellement dans un fichier.
