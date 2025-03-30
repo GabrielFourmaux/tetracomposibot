@@ -1,7 +1,7 @@
 # =-= TETRACOMPOSIBOT =-=
-# contact  : nicolas.bredeche at sorbonne-universite dot fr
-# initiated: 2025-03-25
-# revision : 2025-03-30
+contact  : nicolas.bredeche at sorbonne-universite dot fr
+initiated: 2025-03-25
+revised  : 2025-03-30
 
 * A simple simulator for playing with one... to many robots
 * Un simulateur très simple pour jouer avec un ou plusieurs robots
