@@ -25,7 +25,7 @@ Demo: _python tetracomposibot.py_
 
 Pour lancer une expérience:
 - méthode 1: en ligne de commande, _python tetracomposibot.py_. Utilise config.py comme fichier par défaut.
-- méthode 2: en ligne de commande, _python tetracomposibot.py <fichier config sans extension .py>_. Par exemple: _python tetracomposibot.py config_Paintwars_. Vous pouvez créer/modifier votre fichier de configuration comme il vous plaira.
+- méthode 2: en ligne de commande, _python tetracomposibot.py <fichier config>_. Par exemple: _python tetracomposibot.py config_Paintwars_. Vous pouvez créer/modifier votre fichier de configuration comme il vous plaira.
 - méthode 3: en ligne de commande, avec des paramètres. Cf. _python tetracomposibot.py -h_. Par exemple: _python tetracomposibot.py config_Paintwars 1 False 0_
 
 # Création d'un nouveau projet
