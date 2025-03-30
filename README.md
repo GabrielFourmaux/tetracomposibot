@@ -68,20 +68,20 @@ Un robot dispose de 8 senseurs répartis autour de lui (écart de 45° entre cha
 
 Numérotation des senseurs dans le sens inverse des aiguilles d'une montre. Valeur 0 pour le senseur orienté vers l'avant du robot. Il est possible d'obtenir 3 types d'information des senseurs, chacune étant stockées dans une liste dédiée.
 
-_sensors_ : sensors (distance, max is 1.0)
-_sensor_view_ : type (if any) of sensed obstacle (0:empty, 1:wall, 2:robot)
-_sensor_robot_ : robot's team (if relevant -- otherwise: "n/a")
+* _sensors_ : sensors (distance, max is 1.0)
+* _sensor_view_ : type (if any) of sensed obstacle (0:empty, 1:wall, 2:robot)
+* _sensor_robot_ : robot's team (if relevant -- otherwise: "n/a")
 
 Les variables suivantes sont pré-définies pour permettre une utilisation plus intuitive:
 
-_sensor_front = 0_
-_sensor_front_left = 1_
-_sensor_left = 2_
-_sensor_rear_left = 3_
-_sensor_rear = 4_
-_sensor_rear_right = 5_
-_sensor_right = 6_
-_sensor_front_right = 7_
+* _sensor_front = 0_
+* _sensor_front_left = 1_
+* _sensor_left = 2_
+* _sensor_rear_left = 3_
+* _sensor_rear = 4_
+* _sensor_rear_right = 5_
+* _sensor_right = 6_
+* _sensor_front_right = 7_
 
 Par exemple, _sensors[sensor_left]_ renvoie la distance normalisée (ie. entre 0.0 et 1.0) à l'obstacle s'il existe. _sensor_view[sensor_left_]_ renvoie le type d'obstacle (s'il existe).
 
