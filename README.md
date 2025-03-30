@@ -13,7 +13,7 @@ _"With the Tetracomposibot it has now become possible to play and compose REAL s
 
 Demo: _python tetracomposibot.py_
 
-![Tetracomposibot](tetracomposibot.png)
+![Tetracomposibot](tetracomposibot_lres.png)
 
 # Pré-requis / dependencies
 
