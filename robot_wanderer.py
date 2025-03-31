@@ -18,8 +18,8 @@ class Robot_player(Robot):
 
     def step(self, sensors, sensor_view=None, sensor_robot=None, sensor_team=None):
         
-        translation = sensors[sensor_front]*0.8 #  A MODIFIER
-        rotation = 1.0 * sensors[sensor_front_left] - 1.0 * sensors[sensor_front_right] #  A MODIFIER
+        translation = sensors[sensor_front]*0.8
+        rotation = 1.0 * sensors[sensor_front_left] - 1.0 * sensors[sensor_front_right] + (random.random()-0.5)*0.1
 
         if debug == True:
             if self.iteration % 100 == 0:
