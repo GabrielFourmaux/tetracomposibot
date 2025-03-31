@@ -20,6 +20,7 @@ En partant du code disponible dans le fichier _robot_dumb.py_ (que vous copierez
 * comportement "évite les autres robots et ignore les murs" (fichier _robot_braitenberg_hateBot.py_, à créer).
 
 Remarques: 
+* pour tester les comportements loveBot et hateBot, vous devez ajouter quelques robots. Pour cela, modifiez la fonction _initialize_robots_ de votre fichier _config_.
 * "ignorer" signifie que l'objet est comme transparent (donc pas pris en compote).
 * même si ce n'est pas obligatoire, il est possible de répondre à l'ensemble des questions en utilisant uniquement les senseurs _sensor_front_, _sensor_front_right_ et _sensor_front_left_
 
