@@ -3,8 +3,8 @@
 _"With the Tetracomposibot it has now become possible to play and compose REAL simple robot demo"_
 
 * contact  : nicolas.bredeche at sorbonne-universite dot fr
-* initiated: 2025-03-25
-* revised  : 2025-03-30
+* initiated : 2025-03-25
+* revised : 2025-03-31
 
 **Description**
 * A simple simulator for playing with one... to many robots
