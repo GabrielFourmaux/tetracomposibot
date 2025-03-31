@@ -25,7 +25,7 @@ class Robot_player(Robot):
                 sensor_to_wall.append( sensors[i] )
                 sensor_to_robot.append(1.0)
             elif  sensor_view[i] == 2:
-                sensor_to_wall.append(  )
+                sensor_to_wall.append( 1.0 )
                 sensor_to_robot.append( sensors[i] )
             else:
                 sensor_to_wall.append(1.0)
