@@ -35,6 +35,8 @@ class Robot_player(Robot):
             if self.iteration % 100 == 0:
                 print ("Robot",self.robot_id," (team "+str(self.team_name)+")","at step",self.iteration,":")
                 print ("\tsensors (distance, max is 1.0)  =",sensors)
+                print ("\t\tsensors to wall  =",sensor_to_wall)
+                print ("\t\tsensors to robot =",sensor_to_robot)
                 print ("\ttype (0:empty, 1:wall, 2:robot) =",sensor_view)
                 print ("\trobot's name (if relevant)      =",sensor_robot)
                 print ("\trobot's team (if relevant)      =",sensor_team)
