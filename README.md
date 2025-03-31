@@ -11,7 +11,8 @@ revised  : 2025-03-30
 
 _"With the Tetracomposibot it has now become possible to play and compose REAL simple robot demo"_
 
-Demo: _python tetracomposibot.py_
+* Demo: _python tetracomposibot.py_
+* Help: _python tetracomposibot.py -h_
 
 ![Tetracomposibot](tetracomposibot_lres.png)
 
