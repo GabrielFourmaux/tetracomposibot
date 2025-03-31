@@ -24,7 +24,7 @@ Fichiers importants, à modifier:
     * en entrée: numéro du robot et information sensorielle
     * en sortie: renvoie vitesse de translation et vitesse de rotation
   * remarque: vous pouvez renommer ce fichier (il faudra mettre _config_Paintwars.py_ à jour).
-  * __obligatoire__: donnez un nom à votre équipe (variable _team_name_), et remplissez vos noms/prénoms/no_étudiant·e.
+  * __obligatoire__: donnez un nom à votre équipe (variable _team_name_), et remplissez le champs noms/prénoms/no_étudiant·e.
 * _config_Paintwars.py_:
   _ display_mode_ = <type de rendu: temps réel (0), rapide (1), très rapide sans affichage (2))
   _ arena_ = <numéro de l'arène souhaitée, entre 0 et 4>
