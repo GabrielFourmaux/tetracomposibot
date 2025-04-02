@@ -8,7 +8,7 @@ Cette fonction montre comment faire une recherche aléatoire dans l'espace des p
 
 On considère que chaque paramètre peut prendre une valeur parmi trois: -1 (inhibition), +1 (excitation) ou 0 (pas de connexion).
 
-Calculez le score d'un individu comme vu en courssoit:
+Calculez le score d'un individu pour maximiser à chaque pas de temps la vitesse de translation et minimiser la vitesse de rotation, c'est à dire:
 * score = somme_sur_toutes_les_iterations ( vitesse_de_translation * ( 1 - abs(vitesse_de_rotation) ) ) 
 
 Créez le fichier _robot_randomsearch.py_ (en copiant _robot_optimize.py_), puis modifiez le comme suit:
