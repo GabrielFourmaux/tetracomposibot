@@ -40,7 +40,6 @@ class Robot_player(Robot):
 
         # cet exemple montre comment générer au hasard, et évaluer, des stratégies comportementales
         # Remarques:
-        # - l'évaluation est ici la somme des distances parcourues par pas de temps, mais on peut en imaginer d'autres
         # - la liste "param", définie ci-dessus, permet de stocker les paramètres de la fonction de contrôle
         # - la fonction de controle est une combinaison linéaire des senseurs, pondérés par les paramètres (c'est un "Perceptron")
 
