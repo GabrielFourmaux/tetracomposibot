@@ -48,6 +48,7 @@ class Robot_player(Robot):
         if self.iteration % self.it_per_evaluation == 0:
                 if self.iteration > 0:
                     print ("translations =",self.log_sum_of_translation,"; rotations =",self.log_sum_of_rotation)
+                    print ("\tdistance from origin = ", math.sqrt((self.x-self.x_0)**2+(self.y-self.y_0)**2))
                 self.param = [random.randint(-1, 1) for i in range(8)]
                 self.trial = self.trial + 1
                 print ("Trying strategy no.",self.trial)
