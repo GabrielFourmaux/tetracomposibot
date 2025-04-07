@@ -518,7 +518,7 @@ def simulate(my_robots):
             if my_robots[k].x != backup_x_particle or my_robots[k].y != backup_y_particle:
                 my_robots[k].log_sum_of_translation += math.sqrt((my_robots[k].x - backup_x_particle)**2 + (my_robots[k].y - backup_y_particle)**2)
         if display_screen:
-            if iteration % (display_frameskip+1) == True:
+            if display_frameskip == 0 or iteration % (display_frameskip+1) == True:
                 pygame_draw_arena(arena, screen, scale)
                 pygame.time.delay(int(1.0/display_fps*1000))
         if verbose_debug:
@@ -717,6 +717,8 @@ max_rotation_per_step = 10.0
 max_iterations = config.max_iterations
 
 display_mode = config.display_mode # 0: 'real-time' w/ display -- 1: fast w/ display -- 2: fastest, no display
+
+display_frameskip = 0
 
 if display_mode == 2:
     display_screen = False
