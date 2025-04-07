@@ -13,7 +13,6 @@ class Robot_player(Robot):
 
     param = []
     bestParam = []
-    evaluations = 500 
     it_per_evaluation = 400
     trial = 0
 
@@ -29,7 +28,6 @@ class Robot_player(Robot):
         self.y_0 = y_0
         self.theta_0 = theta_0
         self.param = [random.randint(-1, 1) for i in range(8)]
-        self.evaluations = evaluations
         self.it_per_evaluation = it_per_evaluation
         super().__init__(x_0, y_0, theta_0, name=name, team=team)
 
