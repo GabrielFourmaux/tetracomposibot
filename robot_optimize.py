@@ -18,7 +18,7 @@ class Robot_player(Robot):
 
     x_0 = 0
     y_0 = 0
-    theta_0 = 0
+    theta_0 = 0 # in [0,360]
 
     def __init__(self, x_0, y_0, theta_0, name="n/a", team="n/a",evaluations=0,it_per_evaluation=0):
         global nb_robots
