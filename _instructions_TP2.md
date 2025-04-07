@@ -11,6 +11,8 @@ On considère que chaque paramètre peut prendre une valeur parmi trois: -1 (inh
 Calculez le score d'un individu pour maximiser à chaque pas de temps la vitesse de translation et minimiser la vitesse de rotation, c'est à dire:
 * score = somme_sur_toutes_les_iterations ( vitesse_de_translation * ( 1 - abs(vitesse_de_rotation) ) ) 
 
+Attention: il s'agit de la translation et de la rotation *effective*. Par exemple, un robot dont la commande de translation est de 1.0 mais qui se cogne contre un mur ne se déplace pas, donc la translation effective est nulle. Etudiez bien le code pour trouver comment faire.
+
 Créez le fichier _robot_randomsearch.py_ (en copiant _robot_optimize.py_), puis modifiez le comme suit:
 * en utilisant les variables existantes, fixer le nombre de comportements à générer aléatoirement qui devront être évalués.
 * à chaque fois qu'un comportement est meilleur que les précédents, sauvegardez-le (score, valeur des paramètres et le numéro d'évaluation ou il a été trouvé).
