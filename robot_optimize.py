@@ -45,7 +45,7 @@ class Robot_player(Robot):
         if self.iteration % self.it_per_evaluation == 0:
                 if self.iteration > 0:
                     print ("\tparameters           =",self.param)
-                    print ("\ttranslations         =",self.log_sum_of_translation,"; rotations =",self.log_sum_of_rotation)
+                    print ("\ttranslations         =",self.log_sum_of_translation,"; rotations =",self.log_sum_of_rotation) # *effective* translation/rotation (ie. measured from displacement)
                     print ("\tdistance from origin =",math.sqrt((self.x-self.x_0)**2+(self.y-self.y_0)**2))
                 self.param = [random.randint(-1, 1) for i in range(8)]
                 self.trial = self.trial + 1
