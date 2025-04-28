@@ -51,20 +51,25 @@ _python tetracomposibot.py config_Paintwars <numero_arene> <inverser_position_de
 
 ## Evaluation
 
-Lors de la dernière séance de TP, vous présenterez votre travail pendant une soutenance de 15 minutes environ, en exécutant votre programme. Nous vous fournirons au début de la séance deux nouveaux fichiers:
-1. _go_tournament_eval_ qui permet de lancer un tournoi sur l'ensemble des arènes initialement fournies, ainsi que de nouvelles arènes
-2. _arenas_grX.py_ qui définit de nouvelles arènes inédites. le _X_ correspond à votre numéro de groupe.
-
-Pour utiliser ces nouvelles arènes, vous devez modifier le fichier _config_Paintwars.py_ en remplaçant l'importation de _arenas.py_ par le fichier fourni _arenas_eval_grX.py_
+Lors de la dernière séance de TP, vous présenterez votre travail pendant une soutenance de 15 minutes environ, en exécutant votre programme. Nous vous fournirons au début de la séance trois nouveaux fichiers:
+1. _arenas_eval.py_ qui propose les arènes d'origine (no. 0 à 4) ainsi que de nouvelles arènes inédites (no. 5 à 9). 
+2. _go_tournament_eval_ qui permet de lancer un tournoi sur l'ensemble des arènes initialement fournies, ainsi que de nouvelles arènes
+3. _config_Paintwars_eval.py_
 
 On vous demandera:
 * d'utiliser _tetracomposibot.py_ pour faire une démonstration des stratégies que vous avez implémentées;
-* d'utiliser le script _go_tournament_eval_ pour présenter les scores de votre stratégie préférée contre l'équipe _robot_champion_eval_ pour chacun des labyrinthes initiaux ainsi que les labyrinthes inédits;
-* d'expliquer votre architecture à l'oral, c'est à dire l'architecture globale et les comportements de base. Vous pouvez préparer une simple feuille A4 si vous souhaitez montrer visuellement votre architecture;
+* d'utiliser le script _go_tournament_eval_ pour présenter les scores de votre stratégie préférée contre l'équipe _robot_champion_eval_ pour chacun des labyrinthes initiaux ainsi que les labyrinthes inédits. Pour le lancer: _sh go_tournament_eval_
+* d'expliquer votre architecture à l'oral, c'est à dire l'architecture globale et les comportements de base. Vous pouvez préparer une simple feuille A4 si vous souhaitez montrer visuellement votre architecture
 * de répondre aux questions qui pourront porter sur le code et sur les méthodes utilisées ou vues en cours.
 
-Pendant la séance (hors soutenance), vous devrez vous coordonner avec les autres groupes pour faire un tournoi. Chaque groupe devra rencontrer **tous** les autres groupes adversaires, sur toutes les arènes (2 matches par arène, en variant la position de départ). Pour cela, vous modifierez _config_Paintwars.py_ pour faire s'affronter les deux équipes (i.e. une équipe jouera les bleus, l'autre les rouges -- les imports et la fonction _initialize_robots_ devront être adaptés). Vous utiliserez le script _go_tournament_eval_  pour avoir rapidement des résultats (display_mode 1 ou 2).
+Pendant la séance (hors soutenance), vous devrez vous coordonner avec les autres groupes pour faire un tournoi. Chaque groupe devra rencontrer **tous** les autres groupes adversaires, sur toutes les arènes (2 matches par arène, en variant la position de départ). 
 
-Vous reporterez les résultats du tournoi sur un document partagé qui vous sera donné en début de séance.
+Procédure:
+1. une équipe doit nommer son programme _robot_champion.py_, l'autre doit nommer son programme _robot_challenger.py_ (i.e. une équipe jouera les bleus, l'autre les rouges, peu importe l'ordre)
+2. lancez un tournoi avec la commande _sh go_tournament_eval_ 
+3. comptez les points. Chaque équipe compte +1 pour une victoire, +0.5 égalité, +0 défaite. La somme des scores de chaque équipe est forcément 20.
+4. reportez les points dans le tableau prévu à cet effet: chaque équipe reporte son score dans sa ligne du tableau. Donc pour un tournoi, deux scores sont entrés dans le tableau, un pour chaque équipe. Par exemple: Si l’équipe A bat l’équipe B avec un score de 7 à 3, on écrira "7" sur la ligne "équipe A", colonne "équipe B", et "3" sur la ligne "équipe B", colonne "équipe A".
+
+Astuce: pour évaluer plus vite (sans affichage), vous pouvez initialiser la variable _display_mode=2_ dans _go_tournament_eval.py_
 
 Le dernier _git push_ de votre projet avant le début de la séance d'évaluation sera pris en compte comme rendu.
